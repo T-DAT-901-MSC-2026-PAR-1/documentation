@@ -20,3 +20,9 @@
 
 - [Changelog](./changelog/CHANGELOG.md)
 - [Glossary](./appendices/glossary.md)
+
+---
+
+# Translated Content
+
+- [Streaming 101 : Le monde au-delà du batch](./translations/streaming_101.md)
