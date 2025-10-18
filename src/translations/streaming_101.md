@@ -251,13 +251,23 @@ Le *windowing* par *event time* est ce que vous utilisez lorsque vous devez obse
 
 Ce diagramme montre un exemple de *windowing* d'une source non bornée dans des *fixed windows* d'une heure :
 
-[Image : Figure 10 - Diagramme des fenêtres fixes par event time]
+![Image : Figure 10 - Diagramme des fenêtres fixes par event time](./images/streaming_101/figure_10.jpg)
+> **Figure 10 : Fenêtrage en fenêtres fixes par temps d'événement.**
+>
+> Les données sont collectées dans des fenêtres en fonction des moments où elles se sont produites. Les flèches blanches indiquent des exemples de données qui sont arrivées dans des fenêtres de temps de traitement différentes des fenêtres de temps d'événement auxquelles elles appartenaient.
+>
+> Image : *Tyler Akidau.*
 
 Les lignes blanches solides dans le diagramme appellent deux données particulières d'intérêt. Ces deux données sont toutes deux arrivées dans des fenêtres de *processing time* qui ne correspondaient pas aux fenêtres d'*event time* auxquelles elles appartenaient. En tant que tel, si ces données avaient été fenêtrées dans des fenêtres de *processing time* pour un cas d'usage qui se souciait des *event times*, les résultats calculés auraient été incorrects. Comme on pourrait s'y attendre, la justesse de l'*event time* est une belle chose à propos de l'utilisation des fenêtres d'*event time*.
 
-Une autre belle chose à propos du *windowing* par *event time* sur une source de données non bornée est que vous pouvez créer des fenêtres de taille dynamique, telles que les *sessions*, sans les divisions arbitraires observées lors de la génération de *sessions* sur des *fixed windows* (comme nous l'avons vu précédemment dans l'exemple des *sessions* de la [section "Données non bornées — batch"](#section-ref)) :
+Une autre belle chose à propos du *windowing* par *event time* sur une source de données non bornée est que vous pouvez créer des fenêtres de taille dynamique, telles que les *sessions*, sans les divisions arbitraires observées lors de la génération de *sessions* sur des *fixed windows* (comme nous l'avons vu précédemment dans l'exemple des *sessions* de la [section "Données non bornées — batch"](#données-non-bornées--batch)) :
 
-[Image : Figure 11 - Diagramme des fenêtres de sessions par event time]
+![Image : Figure 11 - Diagramme des fenêtres de sessions par event time](./images/streaming_101/figure_11.jpg)
+> **Figure 11 : Fenêtrage en fenêtres de session par temps d'événement.**
+>
+> Les données sont collectées dans des fenêtres de session capturant les pics d'activité en fonction des moments où les événements correspondants se sont produits. Les flèches blanches indiquent à nouveau le réarrangement temporel nécessaire pour placer les données dans leurs emplacements corrects de temps d'événement.
+>
+> Image : *Tyler Akidau.*
 
 Bien sûr, des sémantiques puissantes viennent rarement gratuitement, et les fenêtres d'*event time* ne font pas exception. Les fenêtres d'*event time* ont deux inconvénients notables dus au fait que les fenêtres doivent souvent vivre plus longtemps (en *processing time*) que la longueur réelle de la fenêtre elle-même :
 
