@@ -166,3 +166,11 @@ In the context of data processing, **windowing** refers to the technique of divi
 **Example**: If you're analyzing website traffic, you might use 1-hour tumbling windows to count page views per hour, or 10-minute sliding windows (updated every minute) to detect sudden traffic spikes more responsively.
 
 Windowing is fundamental in frameworks like Apache Flink, Apache Spark Streaming, and Apache Beam, where it enables efficient aggregations, joins, and analytics on streaming data.
+
+## Server Sent Events
+
+Server-Sent Events 10 (SSE) is an option you can leverage to implement HTTP
+streaming. SSE is a server push technology commonly used to send message updates or
+continuous data streams to a browser client. SSE aims to enhance native, cross-browser
+server-to-client streaming through a JavaScript API called EventSource, standardized 11 as
+part of HTML5 by the World Wide Web Consortium (W3C)

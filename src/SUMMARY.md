@@ -25,4 +25,5 @@
 
 # Translated Content
 
-- [Streaming 101 : Le monde au-delà du batch](./translations/streaming_101.md)
+- [Streaming 101 : Une visite haut niveau des concepts modernes de traitement de données](./translations/streaming_101.md)
+- [Streaming 102: Le quoi, où, quand et comment du traitement de données non bornées](./translations/streaming_102.md)
