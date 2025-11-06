@@ -10,6 +10,24 @@
 
 ---
 
+# Scrapper
+
+- [Python WebSocket scrapper](./scrapper.md)
+
+---
+
+# Apache Kafka
+
+- [Cluster creation process](./kafka/cluster_design.md)
+
+---
+
+# Apache Spark
+
+- [Processus de création des jobs](./spark/jobs.md)
+- [Glossaire](./spark/glossary.md)
+- [Bibliography](./spark/bibliography.md)
+
 # References
 
 - [Bibliography](./references/bibliography.md)
