@@ -2,5 +2,4 @@
 title = "Epitech Big Data 901 - Crypto Viz"
 authors = ["Gabriel LOPEZ"]
 language = "en"
-multilingual = false
 src = "src"

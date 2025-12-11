@@ -15,6 +15,8 @@
 # System Architecture
 
 - [Architectural Overview](./architecture/overview.md)
+- [Detailed Component Architecture](./architecture/detail.md)
+
 
 # Scrapper
 
