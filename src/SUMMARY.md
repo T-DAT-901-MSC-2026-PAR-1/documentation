@@ -1,14 +1,20 @@
 # Summary
 
-[Introduction](./README.md)
+- [Introduction](./README.md)
+
+- [Project Objectives](./objectives.md)
 
 ---
 
-# Software Requirements Specification
+# Requirements Analysis 
 
-- [Overview](./specifications/README.md)
+- [Functional Requirements](./requirements/functional.md)
 
 ---
+
+# System Architecture
+
+- [Architectural Overview](./architecture/overview.md)
 
 # Scrapper
 
@@ -19,11 +25,21 @@
 # Apache Kafka
 
 - [Cluster creation process](./kafka/cluster_design.md)
+- [Security](./kafka/security.md)
+
+---
+
+# Strimzi (Kafka Kubernetes Operator)
+
+- [Sécuriser l'accés à un cluster Kafka](./strimzi/16_securing_access.md)
 
 ---
 
 # Apache Spark
 
+- [Cluster Docker compose](./spark/compose.md)
+- [Configurer Spark](./spark/config.md)
+- [Guide de programmation - *Structured Streaming API*](./spark/structured_streaming.md)
 - [Processus de création des jobs](./spark/jobs.md)
 - [Glossaire](./spark/glossary.md)
 - [Bibliography](./spark/bibliography.md)

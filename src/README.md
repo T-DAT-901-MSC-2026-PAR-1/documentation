@@ -1,5 +1,8 @@
 # Introduction
 
-- Purpose of this Document - At first, main aim of why this document is necessary and what’s purpose of document is explained and described.
-- Scope of this document - In this, overall working and main objective of document and what value it will provide to customer is described and explained. It also includes a description of development cost and time required.
-- Overview - In this, description of product is explained. It’s simply summary or overall review of product.
+This documentation presents CryptoViz, a distributed real-time cryptocurrency analytics platform designed to continuously collect, process, and visualize cryptocurrency
+market data. 
+
+The system leverages WebSockets, Apache Kafka and Apache Spark distributed stream processing to achieve high throughput and low latency data processing. 
+
+We describe the project requirements, present the system architecture, and justify the technical choices made to build a scalable, fault-tolerant big-data application for competitive cryptocurrency market analysis
